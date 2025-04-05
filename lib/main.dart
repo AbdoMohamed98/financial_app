@@ -1,3 +1,4 @@
+import 'package:financial_app/core/appstyle/fonts.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,11 +10,11 @@ class FinancialApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Column(
         children:[
          Text('abdelrahman',style: TextStyle(
-          fontFamily:'Urbanist' ,
+          fontFamily:Appfonts.appmainfont ,
           fontSize: 20  ,
           fontWeight: FontWeight.w200 ,
           color: Colors.amber
