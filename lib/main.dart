@@ -1,8 +1,9 @@
 import 'package:financial_app/core/appstyle/fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(FinancialApp());
+  runApp(const FinancialApp());
 }
 
 class FinancialApp extends StatelessWidget {
@@ -10,16 +11,31 @@ class FinancialApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Column(
-        children:[
-         Text('abdelrahman',style: TextStyle(
-          fontFamily:Appfonts.appmainfont ,
-          fontSize: 20  ,
-          fontWeight: FontWeight.w200 ,
-          color: Colors.amber
-        ),),
-      ]),
+    return ScreenUtilInit(
+      designSize: const Size(1034, 613), 
+      minTextAdapt: true,
+      builder: (context, child) {
+        return MaterialApp(
+          home: Scaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Abdelrahman',
+                    style: TextStyle(
+                      fontFamily: Appfonts.appmainfont,
+                      fontSize: 20.sp, 
+                      fontWeight: FontWeight.w200,
+                      color: Colors.amber,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
