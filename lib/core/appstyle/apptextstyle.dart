@@ -12,7 +12,7 @@ class Apptextstyle {
   );
    static TextStyle subtitles = TextStyle(
     fontFamily: Appfonts.appmainfont,
-    color: Appcolors.appprimarycolor,
+    color: Appcolors.appsecondarycolor,
     fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
