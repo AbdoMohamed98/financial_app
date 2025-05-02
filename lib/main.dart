@@ -1,7 +1,9 @@
 
+import 'package:financial_app/views/loginview.dart';
+import 'package:financial_app/views/welcomeview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 
 void main() {
   runApp(const FinancialApp());
@@ -13,14 +15,12 @@ class FinancialApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(812, 375),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: Scaffold(
-            body: Center(child: SvgPicture.asset('assets/images/google_ic.svg')),
-          ),
+          home: Loginview(),
         );
       },
       child: const SizedBox(), // 👈 ADD THIS!
