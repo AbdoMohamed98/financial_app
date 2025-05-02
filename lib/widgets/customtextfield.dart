@@ -18,14 +18,14 @@ class Customtextfield extends StatelessWidget {
             hintText:customtextfieldhinttext ,
             hintStyle: TextStyle(color: customtextfieldhintcolor ?? Appcolors.appsecondarycolor ),
             border: OutlineInputBorder(
-              borderSide: BorderSide(color:textfieldbordercolor ?? Appcolors.apptertiary )
+              borderSide: BorderSide(color:textfieldbordercolor ?? Appcolors.whitecolor )
             ),
             enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: textfieldbordercolor ?? Appcolors.apptertiary),
+                borderSide: BorderSide(color: textfieldbordercolor ?? Appcolors.whitecolor),
               borderRadius: BorderRadius.all(Radius.circular(textfieldborderradius ?? 8.r))
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: textfieldbordercolor ?? Appcolors.apptertiary ),
+              borderSide: BorderSide(color: textfieldbordercolor ?? Appcolors.whitecolor ),
               borderRadius: BorderRadius.all(Radius.circular(textfieldborderradius ?? 8.r))
             )
           ) ,

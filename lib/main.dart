@@ -13,7 +13,7 @@ class FinancialApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(800, 350),
+      designSize: const Size(812, 375),
       minTextAdapt: true,
       builder: (context, child) {
         return MaterialApp(
