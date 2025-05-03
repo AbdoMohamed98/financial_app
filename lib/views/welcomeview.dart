@@ -24,10 +24,13 @@ class Welcomeview extends StatelessWidget {
             height: 20.h,
           ),
           Customelevatedbutton(
-            onpressed: () {},
+            onpressed: () {
+              Navigator.pushNamed(context, '/loginview');
+            },
             buttonhight: 56.h,
             buttonwidth: 331.w,
             buttontext: 'Login',
+
           ),
           SizedBox(
             height: 15.h,
