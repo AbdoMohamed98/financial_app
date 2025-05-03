@@ -24,8 +24,13 @@ class Loginview extends StatelessWidget {
               ],)
             ],
           ),
-          Customtextfield(),
-          Customtextfield(),
+          Customtextfield(
+            customtextfieldhinttext: 'Enter your email',
+          ),
+          Customtextfield(
+            customtextfieldhinttext: 'enter your password',
+            suffixIcon: Icon(Icons.visibility_off_sharp,color: Color(0xff6A707C),),
+          ),
           Text('forget password?',style: TextStyle(
             color: Color(0xff6A707C),
             fontSize: 14.sp,
