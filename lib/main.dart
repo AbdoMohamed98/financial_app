@@ -20,7 +20,7 @@ class FinancialApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: Loginview(),
+          home: Welcomeview(),
         );
       },
       child: const SizedBox(), // 👈 ADD THIS!
