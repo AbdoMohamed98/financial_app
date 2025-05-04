@@ -1,8 +1,10 @@
 import 'package:financial_app/core/appstyle/colors.dart';
 import 'package:financial_app/core/appstyle/fonts.dart';
+import 'package:financial_app/core/navigation/approutes.dart';
 import 'package:financial_app/widgets/customelevatedbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class Welcomeview extends StatelessWidget {
   const Welcomeview({super.key});
@@ -25,7 +27,7 @@ class Welcomeview extends StatelessWidget {
           ),
           Customelevatedbutton(
             onpressed: () {
-              Navigator.pushNamed(context, '/loginview');
+              context.pushNamed( Approutes.loginview);
             },
             buttonhight: 56.h,
             buttonwidth: 331.w,

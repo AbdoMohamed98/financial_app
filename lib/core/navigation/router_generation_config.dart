@@ -9,10 +9,18 @@ class RouterGenerationConfig {
   static GoRouter router = GoRouter(
     initialLocation: Approutes.welcomeview,
     routes: [
-      GoRoute(path: Approutes.welcomeview, builder: (context, state) => const Welcomeview()),
-      GoRoute(path: Approutes.loginview, builder: (context, state) => const Loginview()),
-      GoRoute(path:Approutes.forgetpasswordview, builder: (context, state) => const Forgetpasswordview()),
-      GoRoute(path:Approutes.registerview, builder: (context, state) => const Regesterview()),
+      GoRoute(path: Approutes.welcomeview,
+      name:Approutes.welcomeview ,
+       builder: (context, state) => const Welcomeview()),
+      GoRoute(path: Approutes.loginview,
+      name: Approutes.loginview,
+       builder: (context, state) => const Loginview()),
+      GoRoute(path:Approutes.forgetpasswordview, 
+      name: Approutes.forgetpasswordview,
+      builder: (context, state) => const Forgetpasswordview()),
+      GoRoute(path:Approutes.registerview,
+      name: Approutes.registerview,
+       builder: (context, state) => const Regesterview()),
    
       ]);
 }

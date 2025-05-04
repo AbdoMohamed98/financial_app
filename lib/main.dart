@@ -1,6 +1,6 @@
 
-import 'package:financial_app/views/loginview.dart';
-import 'package:financial_app/views/welcomeview.dart';
+import 'package:financial_app/core/navigation/router_generation_config.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,9 +18,9 @@ class FinancialApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       builder: (context, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           debugShowCheckedModeBanner: false,
-          home: Welcomeview(),
+          routerConfig: RouterGenerationConfig.router,
         );
       },
       child: const SizedBox(), // 👈 ADD THIS!
