@@ -2,6 +2,7 @@ import 'package:financial_app/core/navigation/approutes.dart';
 import 'package:financial_app/views/createnewpasswordview.dart';
 import 'package:financial_app/views/forgetpasswordview.dart';
 import 'package:financial_app/views/loginview.dart';
+import 'package:financial_app/views/otpverification.dart';
 import 'package:financial_app/views/passwordchanged.dart';
 import 'package:financial_app/views/regesterview.dart';
 import 'package:financial_app/views/welcomeview.dart';
@@ -29,7 +30,11 @@ class RouterGenerationConfig {
        GoRoute(path: Approutes.passwordchanged,
        name: Approutes.passwordchanged,
        builder: (context, state) => const Passwordchanged(),
-       )
+       ),
+       GoRoute(path: Approutes.otpVerificationview,
+       name: Approutes.otpVerificationview,
+       builder: (context, state) => const Otpverificationview(), // Replace with actual phone number
+       ),
    
       ]);
 }
