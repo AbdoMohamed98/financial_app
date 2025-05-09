@@ -1,6 +1,8 @@
 import 'package:financial_app/core/navigation/approutes.dart';
+import 'package:financial_app/views/createnewpasswordview.dart';
 import 'package:financial_app/views/forgetpasswordview.dart';
 import 'package:financial_app/views/loginview.dart';
+import 'package:financial_app/views/passwordchanged.dart';
 import 'package:financial_app/views/regesterview.dart';
 import 'package:financial_app/views/welcomeview.dart';
 import 'package:go_router/go_router.dart';
@@ -21,6 +23,13 @@ class RouterGenerationConfig {
       GoRoute(path:Approutes.registerview,
       name: Approutes.registerview,
        builder: (context, state) => const Regesterview()),
+       GoRoute(path: Approutes.createnewpasswordview,
+       name: Approutes.createnewpasswordview,
+       builder: (context, state) => const Createnewpasswordview()),
+       GoRoute(path: Approutes.passwordchanged,
+       name: Approutes.passwordchanged,
+       builder: (context, state) => const Passwordchanged(),
+       )
    
       ]);
 }

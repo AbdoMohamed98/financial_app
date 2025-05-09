@@ -27,7 +27,7 @@ class Welcomeview extends StatelessWidget {
           ),
           Customelevatedbutton(
             onpressed: () {
-              context.pushNamed( Approutes.forgetpasswordview);
+              context.pushNamed( Approutes.passwordchanged);
             },
             buttonhight: 56.h,
             buttonwidth: 331.w,

@@ -4,5 +4,6 @@ static String welcomeview = '/Welcomeview';
 static String forgetpasswordview = '/Forgetpasswordview';
 static String registerview = '/Registerview';
 static String otpVerificationview = '/OtpVerificationview';
-static String passwordchanged = '/passwordchanged';
+static String passwordchanged = '/Passwordchanged';
+static String createnewpasswordview = '/Createnewpasswordview';
 }
