@@ -27,7 +27,7 @@ class Welcomeview extends StatelessWidget {
           ),
           Customelevatedbutton(
             onpressed: () {
-              context.pushNamed( Approutes.loginview);
+              context.pushNamed( Approutes.forgetpasswordview);
             },
             buttonhight: 56.h,
             buttonwidth: 331.w,
@@ -38,7 +38,9 @@ class Welcomeview extends StatelessWidget {
             height: 15.h,
           ),
           Customelevatedbutton(
-            onpressed: () {},
+            onpressed: () {
+              context.pushNamed( Approutes.registerview);
+            },
             buttontext: 'Register',
             buttontextcolor: Appcolors.appprimarycolor,
             buttoncolor: Appcolors.whitecolor,

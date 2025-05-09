@@ -16,4 +16,10 @@ class Apptextstyle {
     fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle hinttext = TextStyle(
+    fontFamily: Appfonts.appmainfont,
+    color: Appcolors.lightbluecolor,
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w700,
+  );
 }
